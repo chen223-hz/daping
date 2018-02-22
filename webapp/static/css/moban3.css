@@ -1,0 +1,60 @@
+
+.select select{
+    box-shadow:inset 0px 0px 55px 34px rgba(16,162,249,0.59);/*模板1*/
+ }
+.select option{
+    background:#007fff;/*模板1*/
+}
+li{
+    border-bottom:0.1vw solid #207dde;/*模板1*/
+}
+.leftOne{
+    background:url('/static/img/moban3/leftOne.png');
+}
+.centerBg{
+    overflow:inherit;
+    background:url('/static/img/moban3/center.png');
+}
+.rightOne,.rightTwo,
+.rightThree{
+     background:url('/static/img/moban3/rightOne.png');
+}
+
+.leftTwo{
+    background:url('/static/img/moban3/leftTwo.png');
+}
+#app{
+    background-image:url('/static/img/moban3/BgImg.jpg');
+}
+.BgHead{
+    background:url('/static/img/moban3/headImg.png') 50% 60%;
+}
+.titleLeft, .titleRight{
+    color:#fff;
+    font-size: 1vw;
+}
+.titleLeft{
+     text-align: right;
+     margin-right:26px;
+     margin-top: 5px;
+}
+.titleRight{
+    text-align: left;
+    margin-top: 5px;
+    margin-left:26px;
+}
+.centerTitle h4{
+    color:#fff;
+}
+.centerTitle h2{
+    color:#fff;
+}
+.BgHead span{
+    background:url(/static/img/pifu3.png) no-repeat;
+}
+.BgHead select{
+    color:#1d499e;
+}
+.BgHead option{
+    color:#10a2f9;
+}

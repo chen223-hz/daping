@@ -1,0 +1,71 @@
+
+.select select{
+        box-shadow:inset 0px 0px 55px 34px rgba(0,127,255, 0.58);
+ }
+.select option{
+        background:#007fff;
+}
+li{
+        border-bottom:0.1vw solid #207dde;
+}
+.Dan{
+        padding-left:10px!important;
+}
+.leftOne{
+        background:url('/static/img/moban1/leftOne.png');
+}
+.centerBg{
+        overflow:inherit;
+}
+.rightOne{
+        background:url('/static/img/moban1/rightOne.png');
+}
+.rightTwo{
+        background:url('/static/img/moban1/rightTwo.png');
+}
+.rightThree{
+        background:url('/static/img/moban1/rightThree.png');
+}
+.leftTwo{
+        background:url('/static/img/moban1/leftTwo.png');
+}
+#app{
+    background-image:url('/static/img/moban1/BgImg.jpg');
+}
+.BgHead{
+    background:url('/static/img/moban1/headImg.png') 50% 60%;
+}
+.centerTitle h4{
+    border:1px solid #0ad5f4;
+    color:#0ad5f4;
+    box-shadow: inset 0 3px 33px hsla(0,0%,78%,.3);
+}
+.centerTitle h2{
+    color:#0ad5f4;
+}
+.select select{
+    box-shadow: inset 0 0 55px 34px rgba(0,127,255,0.58);
+    border-radius: 5px;
+}
+.select option{
+    background:#007fff;
+}
+.titleLeft{
+   text-align:right;
+   color:#fff;
+   margin-right:30px;
+}
+.titleRight{
+    text-align: left;
+    color:#fff;
+    margin-left:30px;
+}
+.BgHead span{
+    background:url(/static/img/pifu1.png) no-repeat;
+}
+.BgHead select{
+    color:rgba(255,255,255, 0.8);
+}
+.BgHead option{
+    color:#00bbec;
+}

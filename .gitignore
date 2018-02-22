@@ -1,0 +1,7 @@
+*.pyc
+*.swp
+.coverage
+/webapp/static/dist/
+/front/node_modules/
+.vscode/*
+/webapp/.coverage

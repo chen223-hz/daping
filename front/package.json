@@ -1,0 +1,47 @@
+{
+  "name": "daping",
+  "version": "1.0.0",
+  "description": "daping web ui",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zhangdi",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "babel-core": "^6.18.0",
+    "babel-helper-vue-jsx-merge-props": "^2.0.1",
+    "babel-loader": "^6.2.7",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-object-assign": "^6.8.0",
+    "babel-plugin-transform-vue-jsx": "^3.1.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "cross-env": "^3.1.3",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "gulp": "^3.9.1",
+    "gulp-sftp": "^0.1.5",
+    "html-webpack-plugin": "^2.24.0",
+    "json-loader": "^0.5.7",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "vue-baidu-map": "^0.18.0",
+    "vue-echarts-v3": "^1.0.5",
+    "vue-loader": "^9.7.0",
+    "vuex": "^2.2.1",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "vue": "^2.1.4",
+    "vue-router": "^2.1.1"
+  }
+}

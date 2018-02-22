@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <!--<link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">-->
+    <link rel="stylesheet"  href="#">
+    <script type="text/javascript">
+        var csslink = document.getElementsByTagName("link")[0]
+        loadtheme();
+        function getCookie(name){ 
+            var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+            if(arr=document.cookie.match(reg))
+                return unescape(arr[2]); 
+            else 
+                return null; 
+        }
+        function loadtheme(){
+            //从cookies读取主题
+            var themevalue=getCookie('theme');
+            if(themevalue==null){
+              csslink.href = "/static/css/moban3.css";
+            }else{
+              csslink.href = "/static/css/moban"+themevalue+".css";
+            }
+          }
+    </script>
+    <style type="text/css">
+        body{
+			margin:0;
+			padding:0;
+			width:100%;
+			height:100%;
+			font-family:"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+			background-size:cover;
+			background-repeat: no-repeat;
+            background:#0a1019;
+		}
+        .Appdiv{
+            background:#0a1019;
+        }
+        .spinner {
+            width: 60px;
+            height: 60px;
+            position: relative;
+            margin: 20vw  auto  0;
+        }
+        .Appdiv p{
+            color:#fff;
+            position: absolute;
+            bottom:-50px;
+
+        }
+        .double-bounce1, .double-bounce2 {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          background-color: #fff;
+          opacity: 0.6;
+          position: absolute;
+          top: 0;
+          left: 0;
+          -webkit-animation: bounce 2.0s infinite ease-in-out;
+          animation: bounce 2.0s infinite ease-in-out;
+        }
+        .double-bounce2 {
+          -webkit-animation-delay: -1.0s;
+          animation-delay: -1.0s;
+        } 
+        @-webkit-keyframes bounce {
+            0%, 100% { -webkit-transform: scale(0.0) }
+            50% { -webkit-transform: scale(1.0) }
+        }
+        @keyframes bounce {
+            0%, 100% {
+            transform: scale(0.0);
+            -webkit-transform: scale(0.0);
+          } 50% {
+            transform: scale(1.0);
+            -webkit-transform: scale(1.0);
+          }
+        }
+
+    </style>
+  </head>
+  <body>
+    <div id="app">
+        <div class="Appdiv">
+            <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+            <p>loading</p>
+            </div>
+        </div>
+    </div>
+  <script>
+
+function Match() {
+    var userAgent = navigator.userAgent,
+        rMsie = /(msie\s|trident.*rv:)([\w.]+)/,
+        rFirefox = /(firefox)\/([\w.]+)/,
+        rOpera = /(opera).+version\/([\w.]+)/,
+        rChrome = /(chrome)\/([\w.]+)/,
+        rSafari = /version\/([\w.]+).*(safari)/;
+    var browser;
+    var version;
+    var ua = userAgent.toLowerCase();
+    var match = rMsie.exec(ua);
+    if (match != null) {
+        return { browser: "IE", version: match[2] || "0" };
+    }
+    var match = rFirefox.exec(ua);
+    if (match != null) {
+        return { browser: match[1] || "", version: match[2] || "0" };
+    }
+    var match = rOpera.exec(ua);
+    if (match != null) {
+        return { browser: match[1] || "", version: match[2] || "0" };
+    }
+    var match = rChrome.exec(ua);
+    if (match != null) {
+        return { browser: match[1] || "", version: match[2] || "0" };
+    }
+    var match = rSafari.exec(ua);
+    if (match != null) {
+        return { browser: match[2] || "", version: match[1] || "0" };
+    }
+    if (match != null) {
+        return { browser: "", version: "0" };
+    }
+}
+function initBrowserVersion () {
+    var browserMatch = Match();
+    console.log(browserMatch.browser + '--' + browserMatch.version);
+    if (browserMatch.browser) {
+        if (browserMatch.browser == "IE"&&browserMatch.version<11)
+        {
+            alert("浏览器版本太低，请升级，以免影响使用体验！");
+            return false;
+        }
+        else if (browserMatch.browser == "chrome" &&  30>browserMatch.version.substring(0,browserMatch.version.indexOf(".")))
+        {
+            alert("浏览器版本太低，请升级，以免影响使用体验！");
+            return false;
+        }
+        else if (browserMatch.browser == "firefox" && 40 > browserMatch.version.substring(0, browserMatch.version.indexOf("."))) {
+            alert("浏览器版本太低，请升级，以免影响使用体验！");
+            return false;
+        }
+    }
+}
+    
+  </script>
+  <script type="text/javascript" src="/static/vendor.b6521752634bd451e3ca.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "vendor_b6521752634bd451e3ca",
+  "content": {
+    "./node_modules/vue/dist/vue.runtime.common.js": 1,
+    "./node_modules/vue-router/dist/vue-router.common.js": 2,
+    "./node_modules/vue-echarts-v3/dist/js/full.js": 3,
+    "./node_modules/vue-baidu-map/index.js": 4
+  }
+}
